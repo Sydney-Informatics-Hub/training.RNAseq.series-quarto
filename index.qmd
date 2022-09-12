@@ -1,59 +1,31 @@
 ---
-title: "Course title"
+title: "**RNA-seq using Nextflow**"
 output:
   html_document:
     toc: false
     toc_float: false
+
+fig-cap-location: top
+
 ---
 
+**Synopsis:** This workshop series will introduce you to **RNA sequencing data analysis for differential expression and pathway enrichment**. This is suitable for people who are **new to the command line interface and R**. 
 
-This course is aimed at researchers, students, and industry professionals who want to learn about ...
+### **Target audience:**
+Researchers, students and life scientists who are new to RNA sequencing for differential expression and pathway analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use [nf-co.re](https://nf-co.re/) workflows.
 
+### **Useful resources**
+- Introduction to __[Command Line for Genomics](https://datacarpentry.org/shell-genomics/)__
+- __[Nextflow and Supercomputing at Pawsey](https://www.biocommons.org.au/events/nextflow-nimbus)__ : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud. 
 
-## Trainers
+> * **Own laptop and access to Pawsey Nimbus is required**
+{: .prereq}
 
-* Nathaniel (Nate) Butterworth (PhD Computational Geophysics), nathaniel.butterworth@sydney.edu.au
-* Darya Vanichkina (PhD Bioinformatics, SFHEA)
-* Kristian Maras (MSc Quant Fin)
+# Differential expression and pathway analysis 
 
-
-## Course pre-requisites and setup requirements
-
-No previous programming experience is required, but **Session 1 is a pre-requisite for the other sessions**. Training will be delivered online, so you will need access to a modern computer with a stable internet connection and around 5GB of storage space for data downloaded prior to the course. Participants are encouraged to setup a Python environment on their local computer (as per the [Setup Instructions](./setup.html) provided), but participation using other platforms/environments can be supported where necessary.
-
-
-
-
-## Venue, online via Zoom
-Participants will be provided with a Zoom link. Trainers will be broadcasting from Sydney.
-
-#### Zoom etiquette and how we interact
-
-Sessions will be recorded for attendees only, and it is set up to only record the host shared screen and host audio. We will try and get these uploaded to this site as soon as possible. Please interrupt whenever you want! Ideally, have your camera on and interact as much as possible. There will be someone monitoring the chat-window with any questions you would like to post there.  Four hours is a long Zoom session so we have plenty of scheduled breaks combined with a mix of content to be delivered as demos, plus sections as independent exercises, but most of the course will be pretty-hands on with everyone writing their own code. We will use Zoom break-out rooms as needed with the Trainers and participants.
-
-
-## Code of Conduct
-We expect all attendees of our training to follow our code of conduct, including bullying, harassment and discrimination prevention policies.
-
-In order to foster a positive and professional learning environment we encourage the following kinds of behaviours at all our events and on our platforms:
-
-* Use welcoming and inclusive language
-* Be respectful of different viewpoints and experiences
-* Gracefully accept constructive criticism
-* Focus on what is best for the community
-* Show courtesy and respect towards other community members
-
-Our full CoC, with incident reporting guidelines, is available [here]https://sydney-informatics-hub.github.io/codeofconduct/).
-
-
-
-## General session timings
-
-* ...
-
-
-## Setup Instructions
-
-Please complete the [Setup Instructions](./setup.html) **before the course**.
-
-If you have any trouble, please get in contact with us ASAP.
+| Lesson                                                        | Overview                                                                                                                                                                                                     |
+|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Set up your computer](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/setup.html)| Follow these instructions to install a terminal application and web browser used in the workshop. |
+| [Introductory slides](https://unisyd.sharepoint.com/:p:/r/teams/SydneyInformaticsHub2/_layouts/15/Doc.aspx?sourcedoc=%7B02017CE8-31E0-4693-AAA7-27968E003127%7D&file=Sept2022_Introductory_slides_biocommons_template.pptx&action=edit&mobileredirect=true)                                           | Slides that provide the essential theory behind RNA-sequencing experiments for differential expression, and what will be covered in Part 1 & 2 of the RNA sequencing training series            |
+| [Part 1. Raw sequence to counts](https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/)                        | Part 1 of the two-part RNA sequencing workshop series is where participants will understand raw files and use nf.co.re's rnaseq pipeline to transform raw sequencing data into analysis ready count data     |
+| [Part 2. Counts to genes and pathways](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/) | Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis |

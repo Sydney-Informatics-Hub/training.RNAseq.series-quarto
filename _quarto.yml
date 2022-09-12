@@ -3,7 +3,7 @@ project:
   output-dir: docs
 
 website:
-  title: "Sydney Informatics Hub Course name"
+  title: "RNA-Seq using Nextflow"
   navbar:
     background: primary
     left:
@@ -11,10 +11,7 @@ website:
         text: Home
       - href: setup.html
         text: "Setup"
-      - text: "Session 1"
-        menu:
-        - text: "Fundamentals"
-          href: notebooks/01a-fundamentals.html
+      
 
   body-footer: "All materials copyright Sydney Informatics Hub, University of Sydney"
           

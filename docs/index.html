@@ -2,37 +2,43 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-0.9.345">
+<meta name="generator" content="quarto-1.1.189">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Sydney Informatics Hub Course name - Course title</title>
+<title>RNA-Seq using Nextflow - RNA-seq using Nextflow</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
-span.underline{text-decoration: underline;}
-div.column{display: inline-block; vertical-align: top; width: 50%;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
 </style>
+
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
 <script src="site_libs/quarto-nav/headroom.min.js"></script>
 <script src="site_libs/clipboard/clipboard.min.js"></script>
-<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-search/autocomplete.umd.js"></script>
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link id="quarto-text-highlighting-styles" href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -63,9 +69,11 @@ ul.task-list{list-style: none;}
   <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg navbar-dark ">
       <div class="navbar-container container-fluid">
-      <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Sydney Informatics Hub Course name</span>
-  </a>
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">RNA-Seq using Nextflow</span>
+    </a>
+  </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
   <span class="navbar-toggler-icon"></span>
 </button>
@@ -77,15 +85,6 @@ ul.task-list{list-style: none;}
   <li class="nav-item">
     <a class="nav-link" href="./setup.html">Setup</a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-session-1" role="button" data-bs-toggle="dropdown" aria-expanded="false">Session 1</a>
-    <ul class="dropdown-menu" aria-labelledby="nav-menu-session-1">    
-        <li>
-    <a class="dropdown-item" href="./notebooks/01a-fundamentals.html">
- <span class="dropdown-text">Fundamentals</span></a>
-  </li>  
-    </ul>
-  </li>
 </ul>
               <div id="quarto-search" class="" title="Search"></div>
           </div> <!-- /navcollapse -->
@@ -97,16 +96,13 @@ ul.task-list{list-style: none;}
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc">
+        <nav id="TOC" role="doc-toc" class="toc-active">
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#trainers" id="toc-trainers" class="nav-link active" data-scroll-target="#trainers">Trainers</a></li>
-  <li><a href="#course-pre-requisites-and-setup-requirements" id="toc-course-pre-requisites-and-setup-requirements" class="nav-link" data-scroll-target="#course-pre-requisites-and-setup-requirements">Course pre-requisites and setup requirements</a></li>
-  <li><a href="#venue-online-via-zoom" id="toc-venue-online-via-zoom" class="nav-link" data-scroll-target="#venue-online-via-zoom">Venue, online via Zoom</a></li>
-  <li><a href="#code-of-conduct" id="toc-code-of-conduct" class="nav-link" data-scroll-target="#code-of-conduct">Code of Conduct</a></li>
-  <li><a href="#general-session-timings" id="toc-general-session-timings" class="nav-link" data-scroll-target="#general-session-timings">General session timings</a></li>
-  <li><a href="#setup-instructions" id="toc-setup-instructions" class="nav-link" data-scroll-target="#setup-instructions">Setup Instructions</a></li>
+  <li><a href="#target-audience" id="toc-target-audience" class="nav-link active" data-scroll-target="#target-audience"><strong>Target audience:</strong></a></li>
+  <li><a href="#useful-resources" id="toc-useful-resources" class="nav-link" data-scroll-target="#useful-resources"><strong>Useful resources</strong></a></li>
+  <li><a href="#differential-expression-and-pathway-analysis" id="toc-differential-expression-and-pathway-analysis" class="nav-link" data-scroll-target="#differential-expression-and-pathway-analysis">Differential expression and pathway analysis</a></li>
   </ul>
 </nav>
     </div>
@@ -115,10 +111,8 @@ ul.task-list{list-style: none;}
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Course title</h1>
+<h1 class="title"><strong>RNA-seq using Nextflow</strong></h1>
 </div>
-
-
 
 
 
@@ -131,50 +125,51 @@ ul.task-list{list-style: none;}
 
 </header>
 
-<p>This course is aimed at researchers, students, and industry professionals who want to learn about …</p>
-<section id="trainers" class="level2">
-<h2 class="anchored" data-anchor-id="trainers">Trainers</h2>
+<p><strong>Synopsis:</strong> This workshop series will introduce you to <strong>RNA sequencing data analysis for differential expression and pathway enrichment</strong>. This is suitable for people who are <strong>new to the command line interface and R</strong>.</p>
+<section id="target-audience" class="level3">
+<h3 class="anchored" data-anchor-id="target-audience"><strong>Target audience:</strong></h3>
+<p>Researchers, students and life scientists who are new to RNA sequencing for differential expression and pathway analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use <a href="https://nf-co.re/">nf-co.re</a> workflows.</p>
+</section>
+<section id="useful-resources" class="level3">
+<h3 class="anchored" data-anchor-id="useful-resources"><strong>Useful resources</strong></h3>
 <ul>
-<li>Nathaniel (Nate) Butterworth (PhD Computational Geophysics), nathaniel.butterworth@sydney.edu.au</li>
-<li>Darya Vanichkina (PhD Bioinformatics, SFHEA)</li>
-<li>Kristian Maras (MSc Quant Fin)</li>
+<li>Introduction to <strong><a href="https://datacarpentry.org/shell-genomics/">Command Line for Genomics</a></strong></li>
+<li><strong><a href="https://www.biocommons.org.au/events/nextflow-nimbus">Nextflow and Supercomputing at Pawsey</a></strong> : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud.</li>
 </ul>
-</section>
-<section id="course-pre-requisites-and-setup-requirements" class="level2">
-<h2 class="anchored" data-anchor-id="course-pre-requisites-and-setup-requirements">Course pre-requisites and setup requirements</h2>
-<p>No previous programming experience is required, but <strong>Session 1 is a pre-requisite for the other sessions</strong>. Training will be delivered online, so you will need access to a modern computer with a stable internet connection and around 5GB of storage space for data downloaded prior to the course. Participants are encouraged to setup a Python environment on their local computer (as per the <a href="./setup.html">Setup Instructions</a> provided), but participation using other platforms/environments can be supported where necessary.</p>
-</section>
-<section id="venue-online-via-zoom" class="level2">
-<h2 class="anchored" data-anchor-id="venue-online-via-zoom">Venue, online via Zoom</h2>
-<p>Participants will be provided with a Zoom link. Trainers will be broadcasting from Sydney.</p>
-<section id="zoom-etiquette-and-how-we-interact" class="level4">
-<h4 class="anchored" data-anchor-id="zoom-etiquette-and-how-we-interact">Zoom etiquette and how we interact</h4>
-<p>Sessions will be recorded for attendees only, and it is set up to only record the host shared screen and host audio. We will try and get these uploaded to this site as soon as possible. Please interrupt whenever you want! Ideally, have your camera on and interact as much as possible. There will be someone monitoring the chat-window with any questions you would like to post there. Four hours is a long Zoom session so we have plenty of scheduled breaks combined with a mix of content to be delivered as demos, plus sections as independent exercises, but most of the course will be pretty-hands on with everyone writing their own code. We will use Zoom break-out rooms as needed with the Trainers and participants.</p>
-</section>
-</section>
-<section id="code-of-conduct" class="level2">
-<h2 class="anchored" data-anchor-id="code-of-conduct">Code of Conduct</h2>
-<p>We expect all attendees of our training to follow our code of conduct, including bullying, harassment and discrimination prevention policies.</p>
-<p>In order to foster a positive and professional learning environment we encourage the following kinds of behaviours at all our events and on our platforms:</p>
+<blockquote class="blockquote">
 <ul>
-<li>Use welcoming and inclusive language</li>
-<li>Be respectful of different viewpoints and experiences</li>
-<li>Gracefully accept constructive criticism</li>
-<li>Focus on what is best for the community</li>
-<li>Show courtesy and respect towards other community members</li>
+<li><strong>Own laptop and access to Pawsey Nimbus is required</strong> {: .prereq}</li>
 </ul>
-<p>Our full CoC, with incident reporting guidelines, is available [here]https://sydney-informatics-hub.github.io/codeofconduct/).</p>
+</blockquote>
 </section>
-<section id="general-session-timings" class="level2">
-<h2 class="anchored" data-anchor-id="general-session-timings">General session timings</h2>
-<ul>
-<li>…</li>
-</ul>
-</section>
-<section id="setup-instructions" class="level2">
-<h2 class="anchored" data-anchor-id="setup-instructions">Setup Instructions</h2>
-<p>Please complete the <a href="./setup.html">Setup Instructions</a> <strong>before the course</strong>.</p>
-<p>If you have any trouble, please get in contact with us ASAP.</p>
+<section id="differential-expression-and-pathway-analysis" class="level1">
+<h1>Differential expression and pathway analysis</h1>
+<table class="table">
+<thead>
+<tr class="header">
+<th>Lesson</th>
+<th>Overview</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/setup.html">Set up your computer</a></td>
+<td>Follow these instructions to install a terminal application and web browser used in the workshop.</td>
+</tr>
+<tr class="even">
+<td><a href="https://unisyd.sharepoint.com/:p:/r/teams/SydneyInformaticsHub2/_layouts/15/Doc.aspx?sourcedoc=%7B02017CE8-31E0-4693-AAA7-27968E003127%7D&amp;file=Sept2022_Introductory_slides_biocommons_template.pptx&amp;action=edit&amp;mobileredirect=true">Introductory slides</a></td>
+<td>Slides that provide the essential theory behind RNA-sequencing experiments for differential expression, and what will be covered in Part 1 &amp; 2 of the RNA sequencing training series</td>
+</tr>
+<tr class="odd">
+<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/">Part 1. Raw sequence to counts</a></td>
+<td>Part 1 of the two-part RNA sequencing workshop series is where participants will understand raw files and use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data</td>
+</tr>
+<tr class="even">
+<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/">Part 2. Counts to genes and pathways</a></td>
+<td>Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis</td>
+</tr>
+</tbody>
+</table>
 
 
 </section>
@@ -182,6 +177,24 @@ ul.task-list{list-style: none;}
 <p>All materials copyright Sydney Informatics Hub, University of Sydney</p></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
   const icon = "";
   const anchorJS = new window.AnchorJS();
   anchorJS.options = {
@@ -231,7 +244,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   for (var i=0; i<noterefs.length; i++) {
     const ref = noterefs[i];
     tippyHover(ref, function() {
-      let href = ref.getAttribute('href');
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
