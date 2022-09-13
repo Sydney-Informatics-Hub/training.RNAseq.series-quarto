@@ -6,6 +6,7 @@ output:
     toc_float: false
 
 fig-cap-location: top
+from: markdown+emoji
 
 ---
 
@@ -18,8 +19,8 @@ Researchers, students and life scientists who are new to RNA sequencing for diff
 - Introduction to __[Command Line for Genomics](https://datacarpentry.org/shell-genomics/)__
 - __[Nextflow and Supercomputing at Pawsey](https://www.biocommons.org.au/events/nextflow-nimbus)__ : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud. 
 
-> * **Own laptop and access to Pawsey Nimbus is required**
-{: .prereq}
+> * **Own laptop and access to Pawsey Nimbus is required** :grimacing:
+
 
 # Differential expression and pathway analysis 
 
