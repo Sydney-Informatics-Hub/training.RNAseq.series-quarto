@@ -137,6 +137,7 @@ Having successfully logged in, your terminal should then display something like 
 
 **Congratulations, you have now successfully logged on to your instance!**
 
+<br>
 <div class="keypoints">
 ### **Key points**
 
