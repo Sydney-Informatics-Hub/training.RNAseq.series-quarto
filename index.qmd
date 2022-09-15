@@ -1,5 +1,5 @@
 ---
-title: "**RNA-seq using Nextflow**"
+title: "RNA-Seq: reads to differential genes and pathways"
 output:
   html_document:
     toc: false
@@ -10,12 +10,13 @@ from: markdown+emoji
 
 ---
 
-**Synopsis:** This workshop series will introduce you to **RNA sequencing data analysis for differential expression and pathway enrichment**. This is suitable for people who are **new to the command line interface and R**. 
+**Synopsis** 
+<br>This workshop series will introduce you to **RNA sequencing data analysis for differential expression and pathway enrichment**. This is suitable for people who are **new to the command line interface and R**. 
 
-### **Target audience:**
+### **Target audience**
 Researchers, students and life scientists who are new to RNA sequencing for differential expression and pathway analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use [nf-co.re](https://nf-co.re/) workflows.
 
-### **Useful resources**
+### **Pre-requisites**
 - Introduction to __[Command Line for Genomics](https://datacarpentry.org/shell-genomics/)__
 - __[Nextflow and Supercomputing at Pawsey](https://www.biocommons.org.au/events/nextflow-nimbus)__ : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud. 
 
