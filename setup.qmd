@@ -54,11 +54,7 @@ Mac operating systems come with a terminal program, called Terminal. Just look f
 We also recommend installing [XQuartz](https://www.xquartz.org/), which will replace OSX's native X-Window server. XQuartz has some extra features that may offer better performance when using GUI programs. You'll need to log out and back in again after installing XQuartz in order for it to activate.
 
 #### **C. Windows**
-If you're using a Windows machine, don't panic! You might not have used 'CMD' since Windows 95 but, rest assured, Windows still has a couple of terminal programs and shells buried in the Programs menu.
-However, those aren't going to work for us, as you'll need extra programs and utilities to connect to Nimbus, such as an _SSH_ implementation. 
-
-- To use Nimbus on a Windows computer, you have a couple of options, as shown below. 
-- We recommend using the `MobaXterm` terminal application. 
+To use Nimbus on a Windows computer, you have a couple of options, as shown below. We recommend using the `MobaXterm` terminal application. 
 
 ##### **i. MobaXterm (recommended)**
 [MobaXterm](https://mobaxterm.mobatek.net/download.html) offers a rich experience as a full-featured X-server and terminal emulator for ssh connections, the free version is more than adequate.
