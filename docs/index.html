@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.1.189">
+<meta name="generator" content="quarto-1.1.251">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>RNA-Seq using Nextflow - RNA-Seq: reads to differential genes and pathways</title>
+<title>RNA-Seq workshop series - RNA-seq: reads to differential gene expression workshop series</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,7 +71,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">RNA-Seq using Nextflow</span>
+    <span class="navbar-title">RNA-Seq workshop series</span>
     </a>
   </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
@@ -96,22 +96,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#target-audience" id="toc-target-audience" class="nav-link active" data-scroll-target="#target-audience"><strong>Target audience</strong></a></li>
-  <li><a href="#pre-requisites" id="toc-pre-requisites" class="nav-link" data-scroll-target="#pre-requisites"><strong>Pre-requisites</strong></a></li>
-  <li><a href="#differential-expression-and-pathway-analysis" id="toc-differential-expression-and-pathway-analysis" class="nav-link" data-scroll-target="#differential-expression-and-pathway-analysis">Differential expression and pathway analysis</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">RNA-Seq: reads to differential genes and pathways</h1>
+<h1 class="title"><strong>RNA-seq: reads to differential gene expression workshop series</strong></h1>
 </div>
 
 
@@ -125,25 +117,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p><strong>Synopsis</strong> <br>This workshop series will introduce you to <strong>RNA sequencing data analysis for differential expression and pathway enrichment</strong>. This is suitable for people who are <strong>new to the command line interface and R</strong>.</p>
-<section id="target-audience" class="level3">
-<h3 class="anchored" data-anchor-id="target-audience"><strong>Target audience</strong></h3>
-<p>Researchers, students and life scientists who are new to RNA sequencing for differential expression and pathway analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use <a href="https://nf-co.re/">nf-co.re</a> workflows.</p>
+<p><br>This workshop series will introduce you to <strong>RNA sequencing data analysis for differential expression and pathway enrichment</strong> on the command line. We will use the nf-core/rnaseq pipeline to process raw sequence reads to a gene count matrix and then perform differential expression and enrichment analyses with R/Rstudio.</p>
+<section id="target-audience" class="level2 unlisted">
+<h2 class="unlisted anchored" data-anchor-id="target-audience"><strong>Target audience</strong></h2>
+<p>This workshop series is suitable for people who are familiar with working at command line interface and may be new to RNA-seq for differential expression analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use <a href="https://nf-co.re/">nf-co.re</a> workflows.</p>
 </section>
-<section id="pre-requisites" class="level3">
-<h3 class="anchored" data-anchor-id="pre-requisites"><strong>Pre-requisites</strong></h3>
+<section id="get-the-most-out-of-this-workshop" class="level2 unlisted">
+<h2 class="unlisted anchored" data-anchor-id="get-the-most-out-of-this-workshop"><strong>Get the most out of this workshop</strong></h2>
+<p>This workshop series is presented across 2 days and will consist of presentations, code-along sessions, and breakout sessions on both days. You’ll get the most out of the workshop if you:</p>
 <ul>
-<li>Introduction to <strong><a href="https://datacarpentry.org/shell-genomics/">Command Line for Genomics</a></strong></li>
-<li><strong><a href="https://www.biocommons.org.au/events/nextflow-nimbus">Nextflow and Supercomputing at Pawsey</a></strong> : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud.</li>
+<li>Brush up on your <a href="https://datacarpentry.org/shell-genomics/">command line basics</a> before Day 1<br>
+</li>
+<li>Watch our <a href="https://www.youtube.com/watch?v=VnLX63yXbJU">webinar</a> introducing Pawsey’s Nimbus cloud and nf-core</li>
+<li>Set up your computer before Day 1</li>
+<li>Use the Slack channel to ask questions and engage in discussions during the workshop</li>
+<li>Do the provided challenge exercises during the workshop</li>
 </ul>
-<blockquote class="blockquote">
-<ul>
-<li><strong>Own laptop and access to Pawsey Nimbus is required</strong> <span class="emoji" data-emoji="grimacing">😬</span></li>
-</ul>
-</blockquote>
 </section>
-<section id="differential-expression-and-pathway-analysis" class="level1">
-<h1>Differential expression and pathway analysis</h1>
+<section id="workshop-schedule" class="level2 unlisted">
+<h2 class="unlisted anchored" data-anchor-id="workshop-schedule"><strong>Workshop schedule</strong></h2>
 <table class="table">
 <thead>
 <tr class="header">
@@ -154,22 +146,23 @@ ul.task-list li input[type="checkbox"] {
 <tbody>
 <tr class="odd">
 <td><a href="setup.html">Set up your computer</a></td>
-<td>Follow these instructions to install a terminal application and web browser used in the workshop.</td>
+<td>Follow these instructions to install a terminal application and web browser to be used in the workshop.</td>
 </tr>
 <tr class="even">
-<td><a href="https://unisyd.sharepoint.com/:p:/r/teams/SydneyInformaticsHub2/_layouts/15/Doc.aspx?sourcedoc=%7B02017CE8-31E0-4693-AAA7-27968E003127%7D&amp;file=Sept2022_Introductory_slides_biocommons_template.pptx&amp;action=edit&amp;mobileredirect=true">Introductory slides</a></td>
-<td>Slides that provide the essential theory behind RNA-sequencing experiments for differential expression, and what will be covered in Part 1 &amp; 2 of the RNA sequencing training series</td>
+<td><a href="https://docs.google.com/presentation/d/1Na2nAlK34N196ONzMazGbpxvd-h7Ltx82webeLlN4RU/edit?usp=sharing">Introductory slides</a></td>
+<td>Presentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.</td>
 </tr>
 <tr class="odd">
-<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/">Part 1. Raw sequence to counts</a></td>
-<td>Part 1 of the two-part RNA sequencing workshop series is where participants will understand raw files and use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data</td>
+<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/">Day 1: Raw sequence to gene counts</a></td>
+<td>Part 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data.</td>
 </tr>
 <tr class="even">
-<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/">Part 2. Counts to genes and pathways</a></td>
-<td>Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis</td>
+<td><a href="https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/">Day 2: Counts to genes and pathways</a></td>
+<td>Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis.</td>
 </tr>
 </tbody>
 </table>
+<p>These workshop materials were developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre and the Australian BioCommons.</p>
 
 
 </section>

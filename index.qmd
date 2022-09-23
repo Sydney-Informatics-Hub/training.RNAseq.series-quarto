@@ -1,5 +1,5 @@
 ---
-title: "RNA-Seq: reads to differential genes and pathways"
+title: "**RNA-seq: reads to differential gene expression workshop series**"
 output:
   html_document:
     toc: false
@@ -10,25 +10,29 @@ from: markdown+emoji
 
 ---
 
-**Synopsis** 
-<br>This workshop series will introduce you to **RNA sequencing data analysis for differential expression and pathway enrichment**. This is suitable for people who are **new to the command line interface and R**. 
+<br>This workshop series will introduce you to **RNA sequencing data analysis for differential expression and pathway enrichment** on the command line. We will use the nf-core/rnaseq pipeline to process raw sequence reads to a gene count matrix and then perform differential expression and enrichment analyses with R/Rstudio.   
 
-### **Target audience**
-Researchers, students and life scientists who are new to RNA sequencing for differential expression and pathway analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use [nf-co.re](https://nf-co.re/) workflows.
+## **Target audience**{.unlisted}
 
-### **Pre-requisites**
-- Introduction to __[Command Line for Genomics](https://datacarpentry.org/shell-genomics/)__
-- __[Nextflow and Supercomputing at Pawsey](https://www.biocommons.org.au/events/nextflow-nimbus)__ : WEBINAR: Portable, reproducible and scalable bioinformatics workflows using Nextflow and Pawsey Nimbus Cloud. 
+This workshop series is suitable for people who are familiar with working at command line interface and may be new to RNA-seq for differential expression analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use [nf-co.re](https://nf-co.re/) workflows. 
 
-> * **Own laptop and access to Pawsey Nimbus is required** :grimacing:
+## **Get the most out of this workshop** {.unlisted}
 
+This workshop series is presented across 2 days and will consist of presentations, code-along sessions, and breakout sessions on both days. You'll get the most out of the workshop if you:
 
-# Differential expression and pathway analysis 
+* Brush up on your [command line basics](https://datacarpentry.org/shell-genomics/) before Day 1  
+* Watch our [webinar](https://www.youtube.com/watch?v=VnLX63yXbJU) introducing Pawsey's Nimbus cloud and nf-core
+* Set up your computer before Day 1 
+* Use the Slack channel to ask questions and engage in discussions during the workshop
+* Do the provided challenge exercises during the workshop
 
-| Lesson                                                        | Overview                                                                                                                                                                                                     |
-|---------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Set up your computer](setup.html)| Follow these instructions to install a terminal application and web browser used in the workshop. |
-| [Introductory slides](https://unisyd.sharepoint.com/:p:/r/teams/SydneyInformaticsHub2/_layouts/15/Doc.aspx?sourcedoc=%7B02017CE8-31E0-4693-AAA7-27968E003127%7D&file=Sept2022_Introductory_slides_biocommons_template.pptx&action=edit&mobileredirect=true)                                           | Slides that provide the essential theory behind RNA-sequencing experiments for differential expression, and what will be covered in Part 1 & 2 of the RNA sequencing training series            |
-| [Part 1. Raw sequence to counts](https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/)                        | Part 1 of the two-part RNA sequencing workshop series is where participants will understand raw files and use nf.co.re's rnaseq pipeline to transform raw sequencing data into analysis ready count data     |
-| [Part 2. Counts to genes and pathways](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/) | Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis |
+## **Workshop schedule** {.unlisted}
 
+| Lesson     | Overview |
+|------------|----------|
+| [Set up your computer](setup.html)| Follow these instructions to install a terminal application and web browser to be used in the workshop. |
+| [Introductory slides](https://docs.google.com/presentation/d/1Na2nAlK34N196ONzMazGbpxvd-h7Ltx82webeLlN4RU/edit?usp=sharing) | Presentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.          |
+| [Day 1: Raw sequence to gene counts](https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/) | Part 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re's rnaseq pipeline to transform raw sequencing data into analysis ready count data.     |
+| [Day 2: Counts to genes and pathways](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/) | Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis. |
+
+These workshop materials were developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre and the Australian BioCommons. 
