@@ -14,18 +14,25 @@
     "text": "Target audience\nThis workshop series is suitable for people who are familiar with working at command line interface and may be new to RNA-seq for differential expression analysis. The course is beginner friendly and intended for those interested in using the command line interface for their analysis. It is also suitable for those who want to learn about and use nf-co.re workflows."
   },
   {
+    "objectID": "index.html#prerequisites",
+    "href": "index.html#prerequisites",
+    "title": "RNA-seq: reads to differential gene expression workshop series",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nFamiliarity with Unix/Linux command line\nFamiliarity with R/RStudio"
+  },
+  {
     "objectID": "index.html#get-the-most-out-of-this-workshop",
     "href": "index.html#get-the-most-out-of-this-workshop",
     "title": "RNA-seq: reads to differential gene expression workshop series",
     "section": "Get the most out of this workshop",
-    "text": "Get the most out of this workshop\nThis workshop series is presented across 2 days and will consist of presentations, code-along sessions, and breakout sessions on both days. You’ll get the most out of the workshop if you:\n\nBrush up on your command line basics before Day 1\n\nWatch our webinar introducing Pawsey’s Nimbus cloud and nf-core\nSet up your computer before Day 1\nUse the Slack channel to ask questions and engage in discussions during the workshop\nDo the provided challenge exercises during the workshop"
+    "text": "Get the most out of this workshop\nThis workshop series is presented across 2 days and will consist of presentations, code-along sessions, and breakout sessions on both days. You’ll get the most out of the workshop if you:\n\nBrush up on your command line basics before Day 1\n\nBrush up on your R/Rstudio skills\nWatch our webinar introducing Pawsey’s Nimbus cloud and nf-core\nSet up your computer before Day 1\nUse the Slack channel to ask questions and engage in discussions during the workshop\nDo the provided challenge exercises during the workshop"
   },
   {
     "objectID": "index.html#workshop-schedule",
     "href": "index.html#workshop-schedule",
     "title": "RNA-seq: reads to differential gene expression workshop series",
     "section": "Workshop schedule",
-    "text": "Workshop schedule\n\n\n\nLesson\nOverview\n\n\n\n\nSet up your computer\nFollow these instructions to install a terminal application and web browser to be used in the workshop.\n\n\nIntroductory slides\nPresentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.\n\n\nDay 1: Raw sequence to gene counts\nPart 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data.\n\n\nDay 2: Counts to genes and pathways\nPart 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis."
+    "text": "Workshop schedule\n\n\n\nLesson\nOverview\n\n\n\n\nSet up your computer\nFollow these instructions to install a terminal application and web browser to be used in the workshop.\n\n\nIntroductory slides\nPresentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.\n\n\nDay 1: Raw sequence to gene counts\nPart 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data.\n\n\nDay 2: Counts to genes and functional enrichments\nPart 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and enrichment analysis."
   },
   {
     "objectID": "index.html#course-survey",
