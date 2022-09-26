@@ -42,11 +42,18 @@
     "text": "Course survey!\nPlease fill out our course survey before you leave! Help us help you! 😁"
   },
   {
-    "objectID": "index.html#credits",
-    "href": "index.html#credits",
+    "objectID": "index.html#credits-and-acknowledgements",
+    "href": "index.html#credits-and-acknowledgements",
     "title": "RNA-seq: reads to differential gene expression workshop series",
-    "section": "Credits",
-    "text": "Credits\nThis workshop series developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre, AARnet, QCIF, and the Australian BioCommons."
+    "section": "Credits and acknowledgements",
+    "text": "Credits and acknowledgements\nAcknowledgements are an important way for us to demonstrate the value we bring to your research. Your research outcomes are vital for ongoing funding of the Sydney Informatics Hub and national compute facilities.\nSuggested acknowledgements:\nThe authors acknowledge bioinformatics support and advanced computing resources provided by the Sydney Informatics Hub, a Core Research Facility at the University of Sydney, Pawsey Supercomputing Research Centre, Queensland Cyberinfrastructure Foundation (QCIF) and Australia’s National Research Education Network (AARNet) enabled through the Australian BioCommons (NCRIS via Bioplatforms Australia)."
+  },
+  {
+    "objectID": "notebooks/0.0_about.html",
+    "href": "notebooks/0.0_about.html",
+    "title": "RNA-Seq workshop series",
+    "section": "",
+    "text": "All materials copyright Sydney Informatics Hub, University of Sydney"
   },
   {
     "objectID": "setup.html",
