@@ -25,7 +25,21 @@
     "href": "index.html#workshop-schedule",
     "title": "RNA-seq: reads to differential gene expression workshop series",
     "section": "Workshop schedule",
-    "text": "Workshop schedule\n\n\n\nLesson\nOverview\n\n\n\n\nSet up your computer\nFollow these instructions to install a terminal application and web browser to be used in the workshop.\n\n\nIntroductory slides\nPresentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.\n\n\nDay 1: Raw sequence to gene counts\nPart 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data.\n\n\nDay 2: Counts to genes and pathways\nPart 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis.\n\n\n\nThese workshop materials were developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre and the Australian BioCommons."
+    "text": "Workshop schedule\n\n\n\nLesson\nOverview\n\n\n\n\nSet up your computer\nFollow these instructions to install a terminal application and web browser to be used in the workshop.\n\n\nIntroductory slides\nPresentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.\n\n\nDay 1: Raw sequence to gene counts\nPart 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re’s rnaseq pipeline to transform raw sequencing data into analysis ready count data.\n\n\nDay 2: Counts to genes and pathways\nPart 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis."
+  },
+  {
+    "objectID": "index.html#course-survey",
+    "href": "index.html#course-survey",
+    "title": "RNA-seq: reads to differential gene expression workshop series",
+    "section": "Course survey!",
+    "text": "Course survey!\nPlease fill out our course survey before you leave! Help us help you! 😁"
+  },
+  {
+    "objectID": "index.html#credits",
+    "href": "index.html#credits",
+    "title": "RNA-seq: reads to differential gene expression workshop series",
+    "section": "Credits",
+    "text": "Credits\nThis workshop series developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre, AARnet, QCIF, and the Australian BioCommons."
   },
   {
     "objectID": "setup.html",

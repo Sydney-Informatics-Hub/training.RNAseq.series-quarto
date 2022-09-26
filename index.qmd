@@ -35,4 +35,13 @@ This workshop series is presented across 2 days and will consist of presentation
 | [Day 1: Raw sequence to gene counts](https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/) | Part 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re's rnaseq pipeline to transform raw sequencing data into analysis ready count data.     |
 | [Day 2: Counts to genes and pathways](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/) | Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and pathway analysis. |
 
-These workshop materials were developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre and the Australian BioCommons. 
+
+## **Course survey!** {.unlisted}
+
+Please fill out our **[course survey](https://www.surveymonkey.com/r/rnaseq2022)** before you leave! Help us help you! :grin:
+
+## **Credits**{.unlisted}
+
+This workshop series developed by the Sydney Informatics Hub, University of Sydney in partnership with the Pawsey Supercomputing Research Centre, AARnet, QCIF, and the Australian BioCommons. 
+
+![](/fig/partners.png)
