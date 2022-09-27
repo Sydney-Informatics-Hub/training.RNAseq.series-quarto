@@ -4,7 +4,7 @@
     "href": "index.html",
     "title": "RNA-seq: reads to differential gene expression workshop series",
     "section": "",
-    "text": "This workshop series will introduce you to RNA sequencing data analysis for differential expression and pathway enrichment on the command line. We will use the nf-core/rnaseq pipeline to process raw sequence reads to a gene count matrix and then perform differential expression and enrichment analyses with R/Rstudio.\nAll materials copyright Sydney Informatics Hub, University of Sydney"
+    "text": "This workshop series will introduce you to RNA sequencing data analysis for differential expression and functional enrichment on the command line. We will use the nf-core/rnaseq pipeline to process raw sequence reads to a gene count matrix and then perform differential expression and enrichment analyses with R/Rstudio.\nAll materials copyright Sydney Informatics Hub, University of Sydney"
   },
   {
     "objectID": "index.html#target-audience",
