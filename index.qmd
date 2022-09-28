@@ -40,7 +40,7 @@ This workshop series is presented across 2 days and will consist of presentation
 | [Introductory slides](https://docs.google.com/presentation/d/1Na2nAlK34N196ONzMazGbpxvd-h7Ltx82webeLlN4RU/edit?usp=sharing) | Presentation summarising the essential theory behind RNA-sequencing experiments for differential expression, and an introduction to the workshop series.          |
 | [Day 1: Raw sequence to gene counts](https://sydney-informatics-hub.github.io/rna-seq-pt1-quarto/) | Part 1 of the two-part RNA sequencing workshop series is where participants will use nf.co.re's rnaseq pipeline to transform raw sequencing data into analysis ready count data.     |
 | [Day 2: Counts to genes and functional enrichments](https://sydney-informatics-hub.github.io/rna-seq-pt2-quarto/) | Part 2 of the two-part RNA sequencing workshop series is where participants will use analysis ready raw count data generated in part 1 of the series to perform differential expression and enrichment analysis. |
-
+| [Summary slides](https://docs.google.com/presentation/d/15uxozuj6dL1B6yLkDF6PWFwB-rV_Wc_G1qyjwnLB3Wo/edit?usp=sharing) | Presentation summarising the workshop series and how to interpret the results of our analysis. |
 
 ## **Course survey!** {.unlisted}
 
